@@ -11,6 +11,7 @@ use this as a starter for projects
 ## Todo
 
 - add browser-sync
+- add auto prefixer
 - work on the html
 
 ## Resources
