@@ -10,9 +10,13 @@ use this as a starter for projects
 
 ## Todo
 
-- add browser-sync
-- add auto prefixer
+- add browsersync
+- add autoprefixer
 - work on the html
+- add a package.json
+- add imagemin
+- add pngquant
+
 
 ## Resources
 
