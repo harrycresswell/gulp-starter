@@ -19,7 +19,7 @@ Features:
 
 ### Setup
 ```
-git clone https://github.com/lukeharvey/lh.git
+git clone https://github.com/harrycresswell/gulp-starter.git
 cd gulp-starter
 npm install
 ```
