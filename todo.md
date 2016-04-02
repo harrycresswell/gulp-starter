@@ -1,5 +1,5 @@
 ## Todo
-
+- add sass partials like [supercell](https://github.com/joellongie/superCell) 
 - ~~add browsersync~~
 - ~~add autoprefixer~~
 - ~~add a package.json~~
