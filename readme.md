@@ -2,20 +2,20 @@
 
 #### Version 1.0
 
-This is my gulp starter so far.. still needs some work.
+This is my gulp starter for building static sites.
 
 ## The Process
 
-use this as a starter for simple static front-end projects
+Use this as a starter for simple static front-end projects
 
 ## Todo
 
 - ~~add browsersync~~
 - add autoprefixer
-- work on the html
 - add a package.json
-- add imagemin
+- ~~add imagemin~~
 - add pngquant
+- work on the html
 - create a version for jekyll builds
 
 

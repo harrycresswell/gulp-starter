@@ -1,7 +1,9 @@
-var gulp          = require ('gulp');
+var gulp          = require('gulp');
 var uglify        = require('gulp-uglify');
 var sass          = require('gulp-sass');
 var browserSync   = require('browser-sync');
+var imagemin      = require('gulp-imagemin');
+var autoprefixer  = require('gulp-autoprefixer');
 
 
 function errorLog(error) {
@@ -25,8 +27,22 @@ gulp.task('scripts', function(){
 gulp.task('sass', function(){
   gulp.src('app/sass/**/*.scss')
     .pipe(sass({
-      outputStyle: 'compressed'}).on('error', sass.logError))
+      outputStyle: 'compressed'})
+    .on('error', sass.logError))
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+    }))
     .pipe(gulp.dest('app/css/'))
+});
+
+
+// Image Task
+// Compresses images
+gulp.task('image', function(){
+  gulp.src('app/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('app/img'));
 });
 
 
@@ -34,9 +50,8 @@ gulp.task('sass', function(){
 gulp.task('sass-watch', ['sass'], browserSync.reload);
 
 
-
 // Watch Task
-// Watches JS
+// Watches JS and Sass
 gulp.task('watch', function(){
   browserSync({
       server: {
@@ -48,4 +63,4 @@ gulp.task('watch', function(){
 });
 
 
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'image', 'watch']);
