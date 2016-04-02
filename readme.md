@@ -9,7 +9,6 @@ Features:
 - [Gulp](http://gulpjs.com/)
 - [BrowserSync](http://www.browsersync.io/) for live browser reloading
 
-
 ## Getting started
 
 ### Install pre-requisites
@@ -24,12 +23,3 @@ cd gulp-starter
 npm install
 ```
 Then run `gulp`
-
-## Todo
-
-- ~~add browsersync~~
-- ~~add autoprefixer~~
-- ~~add a package.json~~
-- ~~add imagemin~~
-- work on the html
-- create a version for jekyll builds
