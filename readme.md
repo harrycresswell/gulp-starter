@@ -6,16 +6,17 @@ This is my gulp starter so far.. still needs some work.
 
 ## The Process
 
-use this as a starter for projects
+use this as a starter for simple static front-end projects
 
 ## Todo
 
-- add browsersync
+- ~~add browsersync~~
 - add autoprefixer
 - work on the html
 - add a package.json
 - add imagemin
 - add pngquant
+- create a version for jekyll builds
 
 
 ## Resources

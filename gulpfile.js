@@ -1,6 +1,7 @@
-var gulp = require ('gulp');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
+var gulp          = require ('gulp');
+var uglify        = require('gulp-uglify');
+var sass          = require('gulp-sass');
+var browserSync   = require('browser-sync');
 
 
 function errorLog(error) {
@@ -29,11 +30,21 @@ gulp.task('sass', function(){
 });
 
 
+// Run Sass task then reload browser
+gulp.task('sass-watch', ['sass'], browserSync.reload);
+
+
+
 // Watch Task
 // Watches JS
 gulp.task('watch', function(){
+  browserSync({
+      server: {
+        baseDir: 'app/'
+      }
+  });
   gulp.watch('app/js/*js', ['scripts']);
-  gulp.watch('app/sass/**/*.scss', ['sass'])
+  gulp.watch('app/sass/**/*.scss', ['sass-watch'])
 });
 
 
