@@ -2,11 +2,28 @@
 
 #### Version 1.0
 
-This is my gulp starter for building static sites.
+A Gulp starter for simple static site builds.
 
-## The Process
+Features:
+- [sanitize.css](https://jonathantneal.github.io/sanitize.css/)
+- [Gulp](http://gulpjs.com/)
+- [BrowserSync](http://www.browsersync.io/) for live browser reloading
 
-Use this as a starter for simple static front-end projects
+
+## Getting started
+
+### Install pre-requisites
+
+- [Node.js](http://nodejs.org/) `brew install node`
+- Gulp `npm install -g gulp`
+
+### Setup
+```
+git clone https://github.com/lukeharvey/lh.git
+cd gulp-starter
+npm install
+```
+Then run `gulp`
 
 ## Todo
 
@@ -16,9 +33,3 @@ Use this as a starter for simple static front-end projects
 - ~~add imagemin~~
 - work on the html
 - create a version for jekyll builds
-
-
-## Resources
-
-finding this tutorial helpful
-https://www.youtube.com/watch?v=cg7lwX0u-U0
