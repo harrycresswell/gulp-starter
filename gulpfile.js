@@ -15,17 +15,17 @@ function errorLog(error) {
 // Scripts Task
 // Uglifies
 gulp.task('scripts', function(){
-  gulp.src('app/js/*.js')
+  gulp.src('src/js/*.js')
     .pipe(uglify())
     .on('error', errorLog)
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('app/js'));
 });
 
 
 // Sass Task
 // uglifies
 gulp.task('sass', function(){
-  gulp.src('app/sass/**/*.scss')
+  gulp.src('src/sass/**/*.scss')
     .pipe(sass({
       outputStyle: 'compressed'})
     .on('error', sass.logError))
@@ -58,8 +58,8 @@ gulp.task('watch', function(){
         baseDir: 'app/'
       }
   });
-  gulp.watch('app/js/*js', ['scripts']);
-  gulp.watch('app/sass/**/*.scss', ['sass-watch'])
+  gulp.watch('src/js/*js', ['scripts']);
+  gulp.watch('src/sass/**/*.scss', ['sass-watch'])
 });
 
 

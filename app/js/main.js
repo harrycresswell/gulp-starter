@@ -1,4 +1,1 @@
-//Main Function
-$(function(){
-
-});
+$(function(){});
