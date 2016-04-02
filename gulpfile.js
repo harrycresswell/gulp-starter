@@ -5,7 +5,7 @@ var browserSync   = require('browser-sync');
 var imagemin      = require('gulp-imagemin');
 var autoprefixer  = require('gulp-autoprefixer');
 
-
+// Outputs error in terminal instead of breaking file
 function errorLog(error) {
     console.error.bind(error);
     this.emit('end');

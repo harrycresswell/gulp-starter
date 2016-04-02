@@ -11,10 +11,9 @@ Use this as a starter for simple static front-end projects
 ## Todo
 
 - ~~add browsersync~~
-- add autoprefixer
-- add a package.json
+- ~~add autoprefixer~~
+- ~~add a package.json~~
 - ~~add imagemin~~
-- add pngquant
 - work on the html
 - create a version for jekyll builds
 
