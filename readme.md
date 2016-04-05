@@ -2,7 +2,7 @@
 
 #### Version 1.0
 
-A Gulp starter for simple static site builds.
+A Gulp starter for simple static site builds. If you prefer to use a static site generator i've made a version for [Jekyll](https://github.com/harrycresswell/jekyll-gulp-starter) too.
 
 Features:
 - [sanitize.css](https://jonathantneal.github.io/sanitize.css/)
